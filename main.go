@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"go-trial-class/cli"
+	"go-trial-class/config"
+)
 
 func main() {
-	fmt.Println("Hello World")
+	config.DBConnect()
+	// defer cli.MainMenu()
+	cli.LoginMenu()
 }
